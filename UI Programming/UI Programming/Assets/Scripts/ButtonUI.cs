@@ -11,6 +11,8 @@ public class ButtonUI : BaseUI {
 
     // Use this for initialization
     private Vector2 resolution;
+
+ 
     void Start () {
         oldAnchor = anchor;
         oldShape = shape;
@@ -29,7 +31,7 @@ public class ButtonUI : BaseUI {
     private void OnGUI()
     {
         if (VIsVisible()){
-            if (GUI.Button(new Rect(GetPosX(), GetPosY(), GetWidth(), GetHeight()),"")){
+            if (GUI.Button(new Rect(GetPosX(), GetPosY(), GetWidth(), GetHeight()),"ggg")){
                 Debug.Log("Button pressed!");
             }
         }
@@ -56,25 +58,12 @@ public class ButtonUI : BaseUI {
 
         VSetVisible(isVisible);
 
-
+      
         if (GetScreenSize())
         {
             ChangeSizeAuto();
         }
-
-      //  Debug.Log("test2");
-       /* if (resolution.x != Screen.width || resolution.y != Screen.height)
-        {
-            // do your stuff
-
-            bshape.width =  (Screen.width / 10);
-            bshape.height = (Screen.height /10);
-
-            Debug.Log("test1");
-            resolution.x = Screen.width;
-            resolution.y = Screen.height;
-        }*/
-
-
+      
+      
     }
 }
