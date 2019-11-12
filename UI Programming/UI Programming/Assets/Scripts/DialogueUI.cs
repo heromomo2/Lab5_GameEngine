@@ -65,7 +65,7 @@ public class DialogueUI : BaseUI
             ChangeSizeAuto();
             for (int i = 0; i <  UIElements.Count; i++)
             {
-                UIElements[i].GetScreenSize( new Vector2 (GetWidth(),GetHeight()),new Vector2 (GetPosX(),GetPosY()));
+                UIElements[i].GetScreenSize( new Vector2 (GetWidth(),GetHeight())/*,new Vector2 (GetPosX(),GetPosY())*/);
                 UIElements[i].ChangeSizeAuto();
             }
         }

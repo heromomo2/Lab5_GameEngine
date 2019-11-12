@@ -11,7 +11,8 @@ public class ButtonUI : BaseUI {
 
     // Use this for initialization
     private Vector2 resolution;
-
+    [SerializeField]
+    private string Buttontext;
  
     void Start () {
         oldAnchor = anchor;
@@ -31,7 +32,7 @@ public class ButtonUI : BaseUI {
     private void OnGUI()
     {
         if (VIsVisible()){
-            if (GUI.Button(new Rect(GetPosX(), GetPosY(), GetWidth(), GetHeight()),"ggg")){
+            if (GUI.Button(new Rect(GetPosX(), GetPosY(), GetWidth(), GetHeight()),Buttontext)){
                 Debug.Log("Button pressed!");
             }
         }

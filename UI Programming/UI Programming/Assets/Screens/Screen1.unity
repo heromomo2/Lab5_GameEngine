@@ -146,11 +146,12 @@ MonoBehaviour:
   anchor: 4
   shape:
     serializedVersion: 2
-    x: 300
+    x: 350
     y: 150
     width: 50
     height: 50
   isVisible: 1
+  Buttontext: death
 --- !u!212 &960839881
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -252,6 +253,7 @@ MonoBehaviour:
     width: 50
     height: 50
   isVisible: 1
+  Buttontext: life
 --- !u!212 &962607118
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -353,6 +355,7 @@ MonoBehaviour:
     width: 50
     height: 50
   isVisible: 1
+  Buttontext: 
 --- !u!212 &991027568
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -25,12 +25,12 @@ public class BaseUI : MonoBehaviour, IScreenElement {
 
         if (IsAutoSet)
         {
-            return GetScreenSize(new Vector2(Screen.width, Screen.height), new Vector2 (0.0f,0.0f));
+            return GetScreenSize(new Vector2(Screen.width, Screen.height)/*, new Vector2 (0.0f,0.0f)*/);
         }
         return false;
     }
 
-    public bool GetScreenSize(Vector2 NewScreenSize, Vector2 NewScreenPosition )
+    public bool GetScreenSize(Vector2 NewScreenSize /*, Vector2 NewScreenPosition */)
      {
     
 
@@ -41,9 +41,9 @@ public class BaseUI : MonoBehaviour, IScreenElement {
             screenChangeRatioX = currentScreenSize.x / formerScreenSize.x;
             screenChangeRatioY = currentScreenSize.y / formerScreenSize.y;
 
-            Vector2 formerPos = new Vector2 (GetPosX(),GetPosY());
-            formerPos += NewScreenPosition ;
-            SetPosition(formerPos.x * screenChangeRatioX,formerPos.y * screenChangeRatioX);
+          //  Vector2 formerPos = new Vector2 (GetPosX(),GetPosY());
+          //  formerPos += NewScreenPosition ;
+          //  SetPosition(formerPos.x * screenChangeRatioX,formerPos.y * screenChangeRatioX);
 
             return true;
         }
